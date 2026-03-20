@@ -3,7 +3,7 @@ from django.urls import path
 from taxi.views import (
     index,
     ManufacturerListView,
-    CarListview,
+    CarListView,
     CarDetailView,
     DriversListView,
     DriverDetailView
@@ -22,7 +22,7 @@ urlpatterns = [
     ),
     path(
         "cars/",
-        CarListview.as_view(),
+        CarListView.as_view(),
         name="car-list"
     ),
     path(
